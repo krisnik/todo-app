@@ -2,6 +2,7 @@ const express = require('express');
 var bodyParser = require('body-parser');
 const todoRoutes = require('./routes/todo');
 const mongoose = require('mongoose');
+const path = require("path")
 
 const app = express()
 
@@ -38,7 +39,7 @@ app.use('/todo', todoRoutes);
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+    res.sendFile(path.join(__dirname, '..', 'public', 'index.html'))
 })
 
 app.listen(port, () => {
