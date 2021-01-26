@@ -88,5 +88,7 @@ Sample usecase - Managing content metadata, user management systems, systems tha
 CAP Theorem - Consistency, Availability and Partition Tolerance
 
 CA - RDBMS
+
 CP - MongoDB, HBase
+
 AP - Cassandra, Couch DB
