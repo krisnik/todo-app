@@ -1,6 +1,6 @@
 const routes = require('express').Router();
 
-var TodoListItem = require('../models/todo');
+const TodoListItem = require('../models/todo');
 
 routes.get('/', async (req, res) => {
     TodoListItem.find(function (error, items) {
